@@ -1,6 +1,6 @@
 package All.service;
 
-import All.dto.CategoryDto;
+import All.dto.category.CategoryDto;
 import All.exception.category.CategoryException;
 import All.model.Category;
 import All.repo.CategoryRepo;
