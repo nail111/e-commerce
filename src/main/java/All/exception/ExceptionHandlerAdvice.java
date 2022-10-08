@@ -2,6 +2,7 @@ package All.exception;
 
 import All.exception.category.CategoryException;
 import All.exception.product.ProductException;
+import All.exception.user.AuthenticationFailException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -26,5 +27,10 @@ public class ExceptionHandlerAdvice {
     @ExceptionHandler(value = ProductException.class)
     public final ResponseEntity<?> handleProductException(ProductException productException) {
         return new ResponseEntity<>(productException.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(value = AuthenticationFailException.class)
+    public final ResponseEntity<String> handleAuthenticationFailException(AuthenticationFailException exception) {
+        return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }

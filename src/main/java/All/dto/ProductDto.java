@@ -1,4 +1,4 @@
-package All.dto.product;
+package All.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
 package All.service;
 
-import All.dto.product.ProductDto;
+import All.dto.ProductDto;
 import All.exception.category.CategoryException;
 import All.exception.product.ProductException;
 import All.model.Category;

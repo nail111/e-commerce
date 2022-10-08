@@ -1,6 +1,6 @@
-package All.controller.category;
+package All.controller;
 
-import All.dto.category.CategoryDto;
+import All.dto.CategoryDto;
 import All.model.Category;
 import All.service.CategoryService;
 import lombok.RequiredArgsConstructor;

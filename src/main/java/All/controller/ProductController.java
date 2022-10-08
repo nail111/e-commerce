@@ -1,6 +1,6 @@
-package All.controller.product;
+package All.controller;
 
-import All.dto.product.ProductDto;
+import All.dto.ProductDto;
 import All.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
