@@ -1,5 +1,6 @@
 package All.exception;
 
+import All.exception.cart.CartException;
 import All.exception.category.CategoryException;
 import All.exception.product.ProductException;
 import All.exception.user.AuthenticationFailException;
@@ -38,5 +39,10 @@ public class ExceptionHandlerAdvice {
     @ExceptionHandler(value = UserException.class)
     public final ResponseEntity<String> handleUserException(UserException userException) {
         return new ResponseEntity<>(userException.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(value = CartException.class)
+    public final ResponseEntity<String> handleCartException(CartException cartException) {
+        return new ResponseEntity<>(cartException.getMessage(),HttpStatus.BAD_REQUEST);
     }
 }
